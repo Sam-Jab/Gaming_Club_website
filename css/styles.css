@@ -1,32 +1,39 @@
 
+.container-fluid {
+  padding: 0;
+}
+
+
 /* Home */
 
-
 #home {
-  background-image: url('../images/homeimage2.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   margin: auto;
   color: rgb(214, 214, 214);
   text-align: center;
   height: 1000px;
-  animation: change 10s infinite ease-in-out;
 }
 
-@keyframes change{
-  0%
-  {
-    background-image: url('../images/homeimage2.jpg');
-  }
-  50%
-  {
-    background-image: url('../images/homeimage1.jpg');
-  }
-  100%
-  {
-    background-image: url('../images/homeimage3.jpeg');
-  }
+.backgrounds-container {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background-color: black;
+}
+
+.background {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 2s ease-out;
+}
+
+.showing {
+  opacity: 1;
 }
 
 h1 {
