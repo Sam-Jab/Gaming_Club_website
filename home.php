@@ -39,15 +39,13 @@
 <body>
   <section id="home" class="parallax-section">
     <div class="container-fluid">
-      <div class="row">
-
-        <div class="col-lg-8 col-md-offset-2 col-sm-12">
-          <h1 id="home-title" class="wow fadeInUp" data-wow-delay="0.6s">FST GAMING CLUB</h1>
-        </div>
-        <div class="col-lg-8 col-md-offset-2 col-sm-12">
-          <h5 id="home-text" class="wow fadeInUp" data-wow-delay="1s">At the FST Gaming Club, we believe that every game tells a story, and every player is the author of their destiny.</h5>
-        </div>
+      <div class="backgrounds-container">
+        <img class="showing background" src="images/homeimage1.jpg" alt="">
+        <img class="background" src="images/homeimage2.jpg" alt="">
+        <img class="background" src="images/homeimage3.jpeg" alt="">
       </div>
+      <h1 id="home-title" class="wow fadeInUp" data-wow-delay="0.6s">FST GAMING CLUB</h1>
+      <h5 id="home-text" class="wow fadeInUp" data-wow-delay="1s">At the FST Gaming Club, we believe that every game tells a story, and every player is the author of their destiny.</h5>
       <div class="buttons">
         <a id="getstarted" class="home-button wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Get Started</a>
         <a id="discover" class="home-button wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Discover</a>
@@ -55,7 +53,9 @@
     </div>
   </section>
 
+
   <!-- javscript js -->
+  <script src="js/main.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.parallax.js"></script>
