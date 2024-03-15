@@ -1,0 +1,99 @@
+
+/* Home */
+
+
+#home {
+  background-image: url('../images/homeimage2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: auto;
+  color: rgb(214, 214, 214);
+  text-align: center;
+  height: 1000px;
+  animation: change 10s infinite ease-in;
+}
+
+@keyframes change{
+  0%
+  {
+    background-image: url('../images/homeimage2.jpg');
+  }
+  50%
+  {
+    background-image: url('../images/homeimage1.jpg');
+  }
+  100%
+  {
+    background-image: url('../images/homeimage3.jpeg');
+  }
+}
+
+h1 {
+  font-family: "Minecraft";
+  font-size: 120px;
+  margin-top: 270px;
+  line-height: 50px;
+}
+
+h5 {
+  font-family: "Fjalla One";
+  font-size: 30px;
+  margin-top: 50px;
+  line-height: 50px;
+}
+
+a {
+  font-family: "Minecraft";
+}
+
+#home-logo{
+  padding: 10px 50px;
+  width:45%;
+}
+
+#home .home-button {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 170px;
+  margin: 30px;
+  padding: 20px 30px;
+}
+
+#home .buttons {
+  display: inline-block;
+  width:100%;
+  padding: 3% 20%;
+  margin: auto;
+}
+
+#discover {
+  background: transparent;
+  color: white;
+}
+
+#discover:hover,#discover:focus {
+  background-color: white;
+  color: black;
+}
+
+#getstarted {
+  background-color: white;
+  color: black;
+}
+
+#getstarted:hover,#getstarted:focus {
+  background: transparent;
+  color: white;
+}
+
+#getstarted .hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:after {
+  background: transparent;
+}
+
+#discover .hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:after {
+  background-color: white;
+}

@@ -102,10 +102,9 @@ $(document).ready(function() {
   $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
-       "images/feature.jpg", 
-       "../images/feature.jpg",
-       "../images/feature.jpg",
-       "../images/feature.jpg"
+       "../images/homeimage1", 
+       "../images/homeimage2",
+        "../images/homeimage3" 
         ],  {duration: 2000, fade: 750});
     });
   })
