@@ -33,6 +33,7 @@
   <link href='https://fonts.googleapis.com/css?family=Fjalla+One&family=Angkor&&family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
   <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+  <link rel="icon" type="image/png"  href="images/fstgaming.png">
   <title>FST Gaming Club </title>
 </head>
 
