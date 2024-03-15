@@ -1,8 +1,11 @@
-
-.container-fluid {
+html {
+  margin: 0;
   padding: 0;
 }
 
+#home .container-fluid {
+  padding: 0;
+}
 
 /* Home */
 
@@ -10,14 +13,15 @@
   margin: auto;
   color: rgb(214, 214, 214);
   text-align: center;
-  height: 1000px;
+  min-height: 100vh;
 }
 
 .backgrounds-container {
-  position:fixed;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 100%;
-  z-index: -3;
+  z-index: -1;
   background-color: black;
 }
 
@@ -50,7 +54,7 @@ h5 {
   line-height: 50px;
 }
 
-a {
+#home a {
   font-family: "Minecraft";
 }
 
@@ -63,9 +67,11 @@ a {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  width: 170px;
+  width: 200px;
   margin: 30px;
   padding: 20px 30px;
+  border: 2px solid;
+  border-radius: 0;
 }
 
 #home .buttons {
@@ -99,4 +105,10 @@ a {
 
 #discover .hvr-bounce-to-top:after {
   background-color: transparent;
+}
+
+/* navbar */
+
+#navigation {
+  background-color: black;
 }
