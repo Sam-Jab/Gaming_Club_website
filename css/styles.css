@@ -11,7 +11,7 @@
   color: rgb(214, 214, 214);
   text-align: center;
   height: 1000px;
-  animation: change 10s infinite ease-in;
+  animation: change 10s infinite ease-in-out;
 }
 
 @keyframes change{
@@ -74,8 +74,7 @@ a {
 }
 
 #discover:hover,#discover:focus {
-  background-color: white;
-  color: black;
+  color: white;
 }
 
 #getstarted {
@@ -84,16 +83,13 @@ a {
 }
 
 #getstarted:hover,#getstarted:focus {
-  background: transparent;
   color: white;
 }
 
-#getstarted .hvr-bounce-to-bottom:before,
-.hvr-bounce-to-top:after {
-  background: transparent;
+.hvr-bounce-to-top:before {
+  background: black !important;
 }
 
-#discover .hvr-bounce-to-bottom:before,
-.hvr-bounce-to-top:after {
-  background-color: white;
+#discover .hvr-bounce-to-top:after {
+  background-color: transparent;
 }
