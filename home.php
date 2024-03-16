@@ -16,7 +16,7 @@
   <!-- stylesheets css -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+
   <link rel="stylesheet" href="css/magnific-popup.css">
 
   <link rel="stylesheet" href="css/animate.min.css">
@@ -27,6 +27,7 @@
 
   <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <link href='https://fonts.googleapis.com/css?family=Fjalla+One&family=Angkor&&family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
@@ -87,13 +88,14 @@
   </section>
   <!-- javscript js -->
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.parallax.js"></script>
   <script src="js/smoothscroll.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/custom.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
