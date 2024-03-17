@@ -1,9 +1,8 @@
-html {
-  margin: 0;
-  padding: 0;
+* {
+  color: rgb(214, 214, 214);
 }
 
-#home .container-fluid {
+.container-fluid {
   padding: 0;
 }
 
@@ -12,14 +11,13 @@ html {
 #home {
   position: relative;
   margin: auto;
-  color: rgb(214, 214, 214);
   text-align: center;
   min-height: 100vh;
-  padding-top: 270px;
+  padding-top: 25vh;
 }
 
 .backgrounds-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
@@ -28,27 +26,27 @@ html {
 }
 
 .background {
-  position:fixed;
+  position:absolute;
   left: 0px;
   width: 100%;
   height: 100%;
   z-index: -1;
   opacity: 0;
   object-fit: cover;
-  transition: opacity 2s ease-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .showing {
   opacity: 1;
 }
 
-h1 {
+#home h1 {
   font-family: "Minecraft";
-  font-size: 120px;
-  line-height: 50px;
+  font-size: 800%;
+  line-height: 1;
 }
 
-h5 {
+#home h5 {
   font-family: "Fjalla One";
   font-size: 30px;
   margin-top: 50px;
@@ -111,6 +109,98 @@ h5 {
 /* navbar */
 
 #navigation {
-  background-color: black;
+  
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
+#navigation-bar {
+  padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.navigation-background-box {
+  position: absolute;
+  z-index: -2;
+}
+
+.navigation-background {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#navigation .navbar {
+  font-family: "Minecraft";
+}
+
+#navigation .navbar-brand {
+  color: rgb(214, 214, 214);
+  font-size: 30px;
+}
+
+#navigation .nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+#navigation .nav-link {
+  color: rgb(214, 214, 214);
+}
+
+.active {
+  font-size: 40px;
+  padding-top: 0;
+}
+
+/* features */
+
+#features {
+  min-height: 100vh;
+  padding: 0 10%;
+}
+
+#features .features-row {
+  justify-content: center;
+}
+
+#features .features-col {
+  padding: 200px 20px;
+}
+
+#features .features-icon {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#features img {
+  width: 25%;
+  opacity: .9;
+}
+
+#games {
+  min-height: 100vh;
+}
+
+#events {
+  min-height: 100vh;
+}
+
+#gallery {
+  min-height: 100vh;
+}

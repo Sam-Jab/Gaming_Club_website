@@ -14,4 +14,4 @@ function changeBackground() {
     headerBackgrounds[imageIndex].classList.add("showing");
 }
 
-setInterval(changeBackground, 3000);
+setInterval(changeBackground, 10000);
