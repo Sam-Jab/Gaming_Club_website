@@ -29,8 +29,11 @@
   <link rel="stylesheet" href="css/flexslider.css">
   <link href="css/styles.css?<?= filemtime("css/styles.css") ?>" rel="stylesheet" type="text/css" />
 
-  <link href='https://fonts.googleapis.com/css?family=Fjalla+One&family=Angkor&&family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Lato:wght@100;300;400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Trade+Winds&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
   <title>FST Gaming Club </title>
 </head>
@@ -63,9 +66,7 @@
   <!-- navbar -->
 
   <section id="navigation">
-    <div class="navigation-background-box">
-      <img class="navigation-background" src="images/navigationimage.jpg" alt="">
-    </div>
+
     <div id="navigation-bar" class="container-fluid">
       <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homenavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,28 +101,64 @@
     <!-- Features -->
 
     <section id="features">
+      <!-- <div class="navigation-background-box">
+        <img class="navigation-background" src="images/navigationimage.jpg" alt="">
+      </div> -->
       <div class="container-fluid">
-        <div class="features-row row">
-          <div class="features-col col-lg-4 col-md-12">
-            <div class="features-icon">
-              <img src="images/communities.png" alt="">
+        <div class="row">
+          <div id="features-col-box" class="col-lg-6">
+            <div class="wow-fadeInUp features-col col-lg-12 col-md-12" data-wow-delay="1s">
+              <div class="features-icon">
+                <!-- <img src="images/communities.png" alt=""> -->
+              </div>
+              <h4 class="features-title">DIVERSE GAMING COMMUNITY</h4>
+              <p class="features-text">Whether you're into first-person shooters, role-playing games, strategy games, or anything in between, you'll find like-minded gamers who share your interests here.</p>
             </div>
-            <h4 class="features-title">Diverse Gaming Community</h4>
-            <p class="features-text">Whether you're into first-person shooters, role-playing games, strategy games, or anything in between, you'll find like-minded gamers who share your interests here.</p>
+            <div class="wow fadeInUp features-col col-lg-12 col-md-12" data-wow-delay="1.1s">
+              <div class="features-icon">
+                <!-- <img src="images/event.png" alt=""> -->
+              </div>
+              <h4 class="features-title">REGULAR EVENTS AND TOURNAMENTS</h4>
+              <p class="features-text">From casual gaming nights to competitive tournaments, we host a variety of events to cater to different playstyles and preferences.</p>
+            </div>
+            <div class="wow fadeInUp features-col col-lg-12 col-md-12" data-wow-delay="1.2s">
+              <div class="features-icon">
+                <!-- <img src="images/news.png" alt=""> -->
+              </div>
+              <h4 class="features-title">ENGAGING DISCUSSIONS AND CONTENT</h4>
+              <p class="features-text">Stay updated on the latest gaming news, trends, and releases through our curated content and community discussions.</p>
+            </div>
+            <div class="wow fadeInUp features-col col-lg-12 col-md-12" data-wow-delay="1.3s">
+              <div class="features-icon">
+                <!-- <img src="images/news.png" alt=""> -->
+              </div>
+              <h4 class="features-title">EXCLUSIVE MEMBER RESSOURCES AND WORKSHOPS</h4>
+              <p class="features-text">Members of our gaming club have access to exclusive resources and workshops aimed at enhancing their gaming skills and knowledge.
+                From strategy guides and tutorials to guest speaker sessions and workshops conducted by industry professionals, we provide valuable opportunities for members to level up their gaming expertise.</p>
+            </div>
+            <div class="wow fadeInUp features-col col-lg-12 col-md-12" data-wow-delay="1.5s">
+              <div class="features-icon">
+                <!-- <img src="images/news.png" alt=""> -->
+              </div>
+              <h4 class="features-title">GAMING LOUNGE AND SOCIAL HUB</h4>
+              <p class="features-text">Our gaming club offers a dedicated gaming lounge and social hub where members can gather, relax, and immerse themselves in the gaming experience. </p>
+            </div>
           </div>
-          <div class="features-col col-lg-4 col-md-12">
-            <div class="features-icon">
-              <img src="images/event.png" alt="">
+          <div class="col-lg-6">
+            <div id="features-image-box" class="row">
+              <div class="left col-lg-6">
+                <img id="featureimage1" class="wow fadeInUp features-image" data-wow-delay="1s" src="images/featuresimage1.jpeg" alt="">
+                <img id="featureimage2" class="wow fadeInUp features-image" data-wow-delay="1.1s" src="images/featuresimage2.jpeg" alt="">
+                <img id="featureimage5" class="wow fadeInUp features-image" data-wow-delay="1.1s" src="images/featuresimage5.jpeg" alt="">
+                <img id="featureimage6" class="wow fadeInUp features-image" data-wow-delay="1.1s" src="images/featuresimage6.jpeg" alt="">
+
+              </div>
+              <div class="right col-lg-6">
+                <img id="featureimage3" class="wow fadeInUp features-image" data-wow-delay="1.2s" src="images/featuresimage3.jpeg" alt="">
+                <img id="featureimage4" class="wow fadeInUp features-image" data-wow-delay="1.3s" src="images/featuresimage4.jpeg" alt="">
+                <img id="featureimage7" class="wow fadeInUp features-image" data-wow-delay="1.1s" src="images/featuresimage7.jpeg" alt="">
+              </div>
             </div>
-            <h4 class="features-title">Regular Events and Tournaments</h4>
-            <p class="features-text">From casual gaming nights to competitive tournaments, we host a variety of events to cater to different playstyles and preferences.</p>
-          </div>
-          <div class="features-col col-lg-4 col-md-12">
-            <div class="features-icon">
-              <img src="images/news.png" alt="">
-            </div>
-            <h4 class="features-title">Engaging Discussions and Content</h4>
-            <p class="features-text">Stay updated on the latest gaming news, trends, and releases through our curated content and community discussions.</p>
           </div>
         </div>
       </div>
