@@ -1,10 +1,6 @@
 <?php
-session_start();  
-if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
-
+session_start() ;  
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,6 +58,16 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
   </section>
 
 
+
+
+
+
+
+
+
+
+
+
   <!-- javscript js -->
   <script src="js/main.js"></script>
   <script src="js/jquery.js"></script>
@@ -74,11 +80,3 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 </body>
 
 </html>
-
-
-<?php 
-}else {
-  header("Location: index.php") ;
-  exit() ;  
-}
- ?>

@@ -1,13 +1,11 @@
-<!Doctype html>
-<html lang="en">
+
 <head>
-  <title>Gaming Club</title>
+  <title>FST Gaming Club</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/stylelogin.css">
-  <link rel="icon" type="image/png" href ="images/fstgaming.png">
+<link rel="stylesheet" href="css/stylelogin.css">
 </head>
 <body>
 	<div class="section">
@@ -23,23 +21,20 @@
 								<div class="card-front">
 									<div class="center-wrap">
 										<div class="section text-center">
-                                            <form action="Login.php" method="POST">
 											<h4 class="mb-4 pb-3">Log In</h4>
-                                            
+                                            <form action="login.php" method="post">
 											<div class="form-group">
-												<input type="email" class="form-style" placeholder="Email" name ="user_email" >
+												<input type="email" class="form-style" placeholder="Email" name = "user_email">
 												<i class="input-icon uil uil-at"></i>
 											</div>	
 											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Password" name="password" >
+												<input type="password" class="form-style" placeholder="Password" name="password">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<input type="submit" class="btn mt-4" name="Login" value="Login">
-                                            <p class="mb-0 mt-4 text-center">
-                                            <!-- <a href="https://www.web-leb.com/code" class="link">Forgot your password?</a></p> -->
+											<input type="submit" class="btn mt-4" value="Login" name="Login">
                                             <?php if (isset($_GET['error'])) { ?>
-     		                                <p class="error"><?php echo $_GET['error']; ?></p>
-     	                                    <?php } ?>
+                                                <p class="error"><?php echo $_GET['error']; ?></p>
+                                            <?php } ?>
 				      					</div>
 			      					</div>
 			      				</div>
@@ -48,23 +43,31 @@
 									<div class="center-wrap">
 										<div class="section text-center">
 											<h4 class="mb-3 pb-3">Sign Up</h4>
+                                            <form action="signup.php" method="post">
 											<div class="form-group">
-												<input type="text" class="form-style" placeholder="Full Name">
+												<input type="text" class="form-style" placeholder="User Name" name="user_name">
 												<i class="input-icon uil uil-user"></i>
 											</div>	
 											<div class="form-group mt-2">
-												<input type="tel" class="form-style" placeholder="Phone Number">
+												<input type="tel" class="form-style" placeholder="Phone Number" name="tel">
 												<i class="input-icon uil uil-phone"></i>
 											</div>	
                       <div class="form-group mt-2">
-												<input type="email" class="form-style" placeholder="Email">
+												<input type="email" class="form-style" placeholder="Email" name="user_email">
 												<i class="input-icon uil uil-at"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Password">
+												<input type="password" class="form-style" placeholder="Password" name="password">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="https://www.web-leb.com/code" class="btn mt-4">Register</a>
+											<input type="submit" class="btn mt-4" name="Register" value="Register">
+                                            <?php if (isset($_GET['error'])) { ?>
+     		                                <p class="error"><?php echo $_GET['error']; ?></p>
+     	                                     <?php } ?>
+
+                                                   <?php if (isset($_GET['success'])) { ?>
+                                                    <p class="success"><?php echo $_GET['success']; ?></p>
+                                                    <?php } ?>
 				      					</div>
 			      					</div>
 			      				</div>
@@ -75,6 +78,6 @@
 	      	</div>
 	    </div>
 	</div>
+    </form>
 </body>
-</html> 
 

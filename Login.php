@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include "db_cnn.php";
+include ("db_conn.php");
 
 if (isset($_POST['user_email']) && isset($_POST['password'])) {
 
