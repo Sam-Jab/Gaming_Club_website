@@ -32,8 +32,8 @@
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
 											<input type="submit" class="btn mt-4" value="Login" name="Login">
-                                            <?php if (isset($_GET['error'])) { ?>
-                                                <p class="error"><?php echo $_GET['error']; ?></p>
+                                            <?php if (isset($_GET['error_login'])) { ?>
+                                                <p class="error"><?php echo $_GET['error_login']; ?></p>
                                             <?php } ?>
 				      					</div>
 			      					</div>
@@ -61,12 +61,12 @@
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
 											<input type="submit" class="btn mt-4" name="Register" value="Register">
-                                            <?php if (isset($_GET['error'])) { ?>
-     		                                <p class="error"><?php echo $_GET['error']; ?></p>
+                                            <?php if (isset($_GET['error_signup'])) { ?>
+     		                                <p class="error"><?php echo $_GET['error_signup']; ?></p>
      	                                     <?php } ?>
 
-                                                   <?php if (isset($_GET['success'])) { ?>
-                                                    <p class="success"><?php echo $_GET['success']; ?></p>
+                                                   <?php if (isset($_GET['success_signup'])) { ?>
+                                                    <p class="success"><?php echo $_GET['success_signup']; ?></p>
                                                     <?php } ?>
 				      					</div>
 			      					</div>

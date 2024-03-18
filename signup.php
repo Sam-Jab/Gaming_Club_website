@@ -22,19 +22,19 @@ if (isset($_POST['user_name']) && isset($_POST['password'])
 
 
 	if (empty($user_name)) {
-		header("Location: index.php?error=User Name is required");
+		header("Location: index.php?error_signup=User Name is required");
 	    exit();
 	}else if(empty($password)){
-        header("Location: index.php?error=Password is required");
+        header("Location: index.php?error_signup=Password is required");
 	    exit();
 	}
 	else if(empty($user_email)){
-        header("Location: index.php?error=Email is required");
+        header("Location: index.php?error_signup=Email is required");
 	    exit();
 	}
 
 	else if(empty($tel)){
-        header("Location: index.php?error=Phone Number is required");
+        header("Location: index.php?error_signup=Phone Number is required");
 	    exit();
 	}
 	else{
@@ -46,16 +46,16 @@ if (isset($_POST['user_name']) && isset($_POST['password'])
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0) {
-			header("Location: index.php?error=The username is taken try another one ");
+			header("Location: index.php?error_signup=The username is taken try another one ");
 	        exit();
 		}else {
            $sql2 = "INSERT INTO users(user_name, user_email , password, tel) VALUES('$user_name', '$user_email', '$password' , '$tel')";
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) {
-           	 header("Location: index.php?success=Your account has been created successfully");
+           	 header("Location: index.php?success_signup=Your account has been created successfully");
 	         exit();
            }else {
-	           	header("Location: signup.php?error=unknown error occurred");
+	           	header("Location: signup.php?error_signup=unknown error occurred");
 		        exit();
            }
 		}
