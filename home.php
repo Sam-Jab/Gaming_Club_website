@@ -154,7 +154,7 @@
 
               </div>
               <div class="right col-lg-6">
-                <img id="featureimage3" class="wow fadeInUp features-image" data-wow-delay="1.2s" src="images/featuresimage3.jpeg" alt="">
+                <img id="featureimage8" class="wow fadeInUp features-image" data-wow-delay="1.2s" src="images/featuresimage8.jpeg" alt="">
                 <img id="featureimage4" class="wow fadeInUp features-image" data-wow-delay="1.3s" src="images/featuresimage4.jpeg" alt="">
                 <img id="featureimage7" class="wow fadeInUp features-image" data-wow-delay="1.1s" src="images/featuresimage7.jpeg" alt="">
               </div>
