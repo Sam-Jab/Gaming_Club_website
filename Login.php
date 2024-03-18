@@ -29,7 +29,7 @@ if (isset($_POST['user_email']) && isset($_POST['password'])) {
 			$row = mysqli_fetch_assoc($result);
             if ($row['user_email'] === $user_email && $row['password'] === $password) {
             	$_SESSION['user_email'] = $row['user_email'];
-            	$_SESSION['user_full_name'] = $row['user_full_name'];
+            	$_SESSION['user_name'] = $row['user_name'];
             	$_SESSION['id'] = $row['id'];
             	header("Location: home.php");
 		        exit();
