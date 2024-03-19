@@ -164,11 +164,129 @@
       </div>
     </section>
 
+    <section id="video" class="parallax-section custom-background">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+
+          <div class="video-items col-md-offset-2 col-md-8 col-sm-12">
+            <a class="popup-youtube" href="https://www.youtube.com/watch?v=oD3pxbG9YYI"><i class="fa fa-play"></i></a>
+            <h2 class="wow fadeInUp" data-wow-delay="0.5s">Watch the video</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.8s">Laughter and high-fives punctuate the air, as players bask in the satisfaction of a
+              memorable gaming experience. A promise lingers—more adventures await in this captivating journey !! </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Games -->
 
     <section id="games">
       <div class="container-fluid">
-
+        <h1 class="wow fadeInUp" data-wow-delay="0.5s">Games we play</h1>
+        <div class="games-container row wow fadeInUp" data-wow-delay="0.8s">
+          <div class="card col-lg-3">
+            <img class="card-image" src="images/fc24.jpg" alt="">
+            <div class="card-content">
+              <h2>
+                EA SPORTS FC 24
+              </h2>
+              <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+              </p> -->
+            </div>
+          </div>
+          <div class="card col-lg-3">
+            <img class="card-image" src="images/metrolastlight.jpg" alt="">
+            <div class="card-content">
+              <h2>
+                Metro: Last Light
+              </h2>
+              <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+              </p> -->
+            </div>
+          </div>
+          <div class="card col-lg-3">
+            <img class="card-image" src="images/valhalla.jpg" alt="">
+            <div class="card-content">
+              <h2>
+                Assassin's Creed: Valhalla
+              </h2>
+              <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+              </p> -->
+            </div>
+          </div>
+          <div class="card col-lg-3">
+            <img class="card-image" src="images/pubg.avif" alt="">
+            <div class="card-content">
+              <h2>
+                Player Unknown Battlegrounds
+              </h2>
+              <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+              </p> -->
+            </div>
+          </div>
+          <div class="time row">
+            <h4 class="col-lg-3">FRI 1 PM -> 3 PM</h4>
+            <h4 class="col-lg-3">SAT 10 AM -> 12 PM</h4>
+            <h4 class="col-lg-3">MON 1 PM -> 3 PM</h4>
+            <h4 class="col-lg-3">WED 4 PM -> 6 PM</h4>
+          </div>
+          <div class="card col-lg-3">
+            <img class="card-image" src="images/reddead2.jpg" alt="">
+            <div class="card-content">
+              <h2>
+                Red Dead Redemption 2
+              </h2>
+              <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+              </p> -->
+            </div>
+          </div>
+          <div class="card col-lg-3">
+            <img class="card-image" src="images/nba2k24.webp" alt="">
+            <div class="card-content">
+              <h2>
+                NBA 2K24
+              </h2>
+              <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+              </p> -->
+            </div>
+          </div>
+          <div class="card col-lg-3">
+            <img class="card-image" src="images/minecraft.jpeg" alt="">
+            <div class="card-content">
+              <h2>
+                Minecraft
+              </h2>
+              <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+              </p> -->
+            </div>
+          </div>
+          <div class="card col-lg-3">
+            <img class="card-image" src="images/residentevil7.jpg" alt="">
+            <div class="card-content">
+              <h2>
+                Resident Evil 7: Biohazard
+              </h2>
+              <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+              </p> -->
+            </div>
+          </div>
+          <div class="time row">
+            <h4 class="col-lg-3">FRI 3 PM -> 5 PM</h4>
+            <h4 class="col-lg-3">SAT 3 AM -> 5 PM</h4>
+            <h4 class="col-lg-3">THU 5 PM -> 6 PM</h4>
+            <h4 class="col-lg-3">SUN 4 PM -> 6 PM</h4>
+          </div>
+        </div>
       </div>
     </section>
 
