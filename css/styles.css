@@ -13,7 +13,7 @@
   margin: auto;
   text-align: center;
   min-height: 100vh;
-  padding-top: 25vh;
+  /* padding-top: 25vh; */
 }
 
 .backgrounds-container {
@@ -60,6 +60,21 @@
 #home-logo{
   padding: 10px 50px;
   width:45%;
+}
+
+#home .login-box {
+  margin-bottom: 25vh;
+  text-align: right;
+}
+
+#home #login-icon {
+  width: 2%;
+  margin: 20px;
+  opacity: .8;
+}
+
+#home #login-icon:hover {
+  opacity: 1;
 }
 
 #home .home-button {
