@@ -171,14 +171,12 @@
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
-
           <div class="video-items col-md-offset-2 col-md-8 col-sm-12">
             <a class="popup-youtube" href="https://www.youtube.com/watch?v=oD3pxbG9YYI"><i class="fa fa-play"></i></a>
             <h2 class="wow fadeInUp" data-wow-delay="0.5s">Watch the video</h2>
             <p class="wow fadeInUp" data-wow-delay="0.8s">Laughter and high-fives punctuate the air, as players bask in the satisfaction of a
               memorable gaming experience. A promise lingers—more adventures await in this captivating journey !! </p>
           </div>
-
         </div>
       </div>
     </section>
@@ -296,8 +294,24 @@
     <!-- Events -->
 
     <section id="events">
-      <div class="container-fluid">
-
+      <div class="overlay">
+        <div class="container-fluid">
+          <h1 class="wow fadeInUp" data-wow-delay="0.5s">Upcoming Events</h1>
+          <div class="row">
+            <div class="card col-lg-6 col-md-12">
+              <p class="event-title"><strong>PUBG Esports Tournament</strong> - 25 Mar 2024 - 6:00 PM</p>
+              <p class="event-text">Calling all PUBG enthusiasts! Compete in our esports tournament for a chance to win cash prizes and bragging rights. Teams of five will battle it out in a double-elimination format. Registration is required, so gather your squad and sign up now.</p>
+            </div>
+            <div class="card col-lg-6 col-md-12">
+              <p class="event-title"><strong>NBA 2K24 Tournament</strong> - 30 Mar 2024 - 4:00 PM</p>
+              <p class="event-text">Lace up your virtual sneakers and hit the court in our NBA 2K24 Tournament! Show off your skills on the digital hardwood as you compete against other players in head-to-head matchups. Register now and let the games begin!</p>
+            </div>
+            <div class="card col-lg-6 col-md-12">
+              <p><strong>EA SPORTS FC 24 Championship</strong></p>
+              <p>Experience the excitement of professional football in EA SPORTS FC 24 Championship! Compete against fellow FIFA enthusiasts in a thrilling tournament to determine the ultimate champion. Lace up your virtual cleats and prepare for glory!</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
