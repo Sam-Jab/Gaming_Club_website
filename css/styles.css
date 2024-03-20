@@ -458,7 +458,7 @@ vertical-align: middle;
 }
 
 
-#events {
+#tournaments {
   background: url('../images/eventbackground.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
@@ -470,7 +470,7 @@ vertical-align: middle;
   min-height: 100vh;
 }
 
-#events .overlay {
+#tournaments .overlay {
   background: rgba(03,03,03,0.6);
   width: 100%;
   height: 100%;
@@ -480,19 +480,19 @@ vertical-align: middle;
   padding: 150px 10%;
 }
 
-#events h1 {
+#tournaments h1 {
   margin: 50px 0;
   text-transform: uppercase;
   font-family: Lato, serif;
   font-weight: 300;
 }
 
-#events .row {
+#tournaments .row {
   margin: auto;
   /* padding: 0 13px; */
 }
 
-#events .card {
+#tournaments .card {
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -510,26 +510,124 @@ vertical-align: middle;
   backdrop-filter: blur(5px);
 }
 
-#events .event-text{
+#tournaments .event-text{
   font-family: Lora, sans-serif;
   font-style: italic;
 }
 
-#events .event-title {
+#tournaments .event-title {
   font-family: Lato;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-#events .card-footer {
+#tournaments .card-footer {
   font-size: 0.65em;
   color: #446;
 }
 
+/* gallery */
+
 #gallery {
+  background: url('../images/eventbackground.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center; 
+  position: relative;
+  color: #999;
+  align-items: center;
+  margin: auto;
   min-height: 100vh;
 }
 
+#gallery h1 {
+  margin: 50px 0;
+  text-transform: uppercase;
+  font-family: Lato, serif;
+  font-weight: 300;
+}
+
+#gallery .overlay {
+  background: rgba(03,03,03,0.6);
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  position:sticky;
+  padding: 150px 10%;
+  margin: auto;
+  align-items: center;
+}
+
+.gallery-row {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-row img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  padding: 0;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
 /* footer */
 
 footer {

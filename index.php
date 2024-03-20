@@ -88,7 +88,7 @@
               <a class="nav-link smoothScroll" href="#games">Games</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#events">Events</a>
+              <a class="nav-link" href="#tournaments">tournaments</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gallery">Gallery</a>
@@ -121,8 +121,8 @@
               <div class="features-icon">
                 <!-- <img src="images/event.png" alt=""> -->
               </div>
-              <h4 class="features-title">REGULAR EVENTS AND TOURNAMENTS</h4>
-              <p class="features-text">From casual gaming nights to competitive tournaments, we host a variety of events to cater to different playstyles and preferences.</p>
+              <h4 class="features-title">REGULAR tournaments AND TOURNAMENTS</h4>
+              <p class="features-text">From casual gaming nights to competitive tournaments, we host a variety of tournaments to cater to different playstyles and preferences.</p>
             </div>
             <div class="wow fadeInUp features-col col-lg-12 col-md-12" data-wow-delay="1.2s">
               <div class="features-icon">
@@ -232,16 +232,16 @@
 
 
 
-    <!-- Events -->
+    <!-- Tournaments -->
 
-    <section id="events">
+    <section id="tournaments">
       <div class="overlay">
         <div class="container-fluid">
-          <h1 class="wow fadeInUp" data-wow-delay="0.5s">Upcoming Events</h1>
+          <h1 class="wow fadeInUp" data-wow-delay="0.5s">Upcoming Tournaments</h1>
           <div class="row">
             <?php
             // SQL query to retrieve event information
-            $sql = "SELECT title, DATE_FORMAT(date, '%e %b %Y') AS formatted_date, TIME_FORMAT(time, '%h:%i %p') AS formatted_time, description FROM events WHERE date>CURDATE()";
+            $sql = "SELECT title, DATE_FORMAT(date, '%e %b %Y') AS formatted_date, TIME_FORMAT(time, '%h:%i %p') AS formatted_time, description FROM tournaments WHERE date>CURDATE()";
             $result = $conn->query($sql);
 
             // Check if there are any results
@@ -256,15 +256,15 @@
                 $delay += 0.1;
               }
             } else {
-              echo "No upcoming events";
+              echo "No upcoming Tournaments";
             }
             ?>
           </div>
-          <h1 class="wow fadeInUp" data-wow-delay="0.5s">Past Events</h1>
+          <h1 class="wow fadeInUp" data-wow-delay="0.5s">Past Tournaments</h1>
           <div class="row">
             <?php
             // SQL query to retrieve event information
-            $sql = "SELECT title, DATE_FORMAT(date, '%e %b %Y') AS formatted_date, TIME_FORMAT(time, '%h:%i %p') AS formatted_time, description FROM events WHERE date<CURDATE()";
+            $sql = "SELECT title, DATE_FORMAT(date, '%e %b %Y') AS formatted_date, TIME_FORMAT(time, '%h:%i %p') AS formatted_time, description FROM tournaments WHERE date<CURDATE()";
             $result = $conn->query($sql);
 
             // Check if there are any results
@@ -279,9 +279,9 @@
                 $delay += 0.1;
               }
             } else {
-              echo "No upcoming events";
+              echo "No upcoming Tournaments";
             }
-            $conn->close();
+
             ?>
           </div>
         </div>
@@ -292,8 +292,34 @@
     <!-- Gallery -->
 
     <section id="gallery">
-      <div class="container-fluid">
-
+      <div class="overlay">
+        <div class="container-fluid">
+          <h1>Gallery</h1>
+          <div class="row gallery-row">
+            <?php
+            $sql = "SELECT caption, description, image FROM gallery";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+              $delay = 0.1;
+              while ($row = $result->fetch_assoc()) {
+                echo '<div class="img-box col-lg-4 wow fadeInUp" data-wow-delay="' . $delay . 's">';
+                echo '<img src="' . $row["image"] . '" alt="" />';
+                echo '<div class="transparent-box">';
+                echo '<div class="caption">';
+                echo '<p>' . $row["caption"] . '</p>';
+                echo '<p class="opacity-low">' . $row["description"] . '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                $delay += 0.1;
+              }
+            } else {
+              echo "0 results";
+            }
+            $conn->close();
+            ?>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -313,7 +339,7 @@
           <ul>
             <li>Features</li>
             <li>Games</li>
-            <li>Events</li>
+            <li>tournaments</li>
             <li>Gallery</li>
           </ul>
         </div>
