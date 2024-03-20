@@ -191,7 +191,7 @@
 
           $servername = "localhost";
           $username = "root";
-          $password = "samirT080317-";
+          $password = "";
           $dbname = "f_g_club";
 
 
