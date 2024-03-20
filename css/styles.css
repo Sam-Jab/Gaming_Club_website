@@ -401,12 +401,6 @@
   text-transform: uppercase;
 }
 
-.card-content p,.card-content a {
-  position: absolute;
-  opacity: 0;
-  max-width: 80%;
-  transition: opacity .3s ease-out;
-}
 
 .card-content p {
   inset: auto auto 10px 16px;
@@ -427,6 +421,13 @@
   transition: opacity .3s ease-out;
 }
 
+.genre-text {
+  padding-bottom: 170px;
+}
+
+.release-text {
+padding-bottom: 150px;
+}
 
 .card:hover h2 {
   inset: auto auto 220px 16px;
@@ -461,13 +462,11 @@ vertical-align: middle;
   background: url('../images/eventbackground.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: center center;
+  background-position: center center; 
   position: relative;
   color: #999;
-  
   align-items: center;
   margin: auto;
-  padding: 100px 0;
   min-height: 100vh;
 }
 
@@ -475,17 +474,22 @@ vertical-align: middle;
   background: rgba(03,03,03,0.6);
   width: 100%;
   height: 100%;
-  position: absolute;
+  min-height: 100vh;
   top: 0;
-  padding: 200px 10%;
-  /* backdrop-filter: blur(px); */
+  position:sticky;
+  padding: 150px 10%;
 }
 
 #events h1 {
-  margin-bottom: 50px;
+  margin: 50px 0;
   text-transform: uppercase;
   font-family: Lato, serif;
   font-weight: 300;
+}
+
+#events .row {
+  margin: auto;
+  /* padding: 0 13px; */
 }
 
 #events .card {
@@ -502,7 +506,7 @@ vertical-align: middle;
   background-color: rgba(255, 255, 255, 0.039);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   /* margin: auto; */
-  margin-top: 30px;
+  margin: 10px 10px;
   backdrop-filter: blur(5px);
 }
 
@@ -526,3 +530,56 @@ vertical-align: middle;
   min-height: 100vh;
 }
 
+/* footer */
+
+footer {
+  min-height: 50vh;
+  background-image: url('../images/navigationimage.jpg');
+  padding: 100px 10% ;
+  font-family: "Mohave";
+}
+
+footer .about-col,.explore-col,.games-col,.info-col {
+  margin: 20px;
+}
+
+footer .footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+footer .email-box {
+  background-color: #181818;
+  border: 1px solid ;
+  border-radius: 0px;
+  width: 100%;
+  min-height: 80px;
+  padding: 20px;
+  font-family: Lora;
+  font-style: italic;
+}
+
+footer ul,p {
+  font-weight: 600;
+  opacity: .6;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: .7;
+}
+
+footer .explore-col {
+  width: 200px
+}
+
+footer form {
+  margin-top: 20px;
+}
+
+footer .info-col p {
+  opacity: 1;
+}

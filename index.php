@@ -33,7 +33,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Lato:wght@100;300;400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Trade+Winds&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Lato:wght@100;300;400&family=Lora:ital,wght@0,400..700;1,400..700&family=Mohave:ital,wght@0,300..700;1,300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Trade+Winds&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
   <title>FST Gaming Club </title>
 </head>
@@ -94,7 +94,7 @@
               <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Register</a>
+              <a class="nav-link" href="loginscreen.php">Register</a>
             </li>
           </ul>
         </div>
@@ -186,110 +186,51 @@
     <section id="games">
       <div class="container-fluid">
         <h1 class="wow fadeInUp" data-wow-delay="0.5s">Games we play</h1>
-        <div class="games-container row wow fadeInUp" data-wow-delay="0.8s">
-          <div class="card col-lg-3">
-            <img class="card-image" src="images/fc24.jpg" alt="">
-            <div class="card-content">
-              <h2>
-                EA SPORTS FC 24
-              </h2>
-              <!-- <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-              </p> -->
-            </div>
-          </div>
-          <div class="card col-lg-3">
-            <img class="card-image" src="images/metrolastlight.jpg" alt="">
-            <div class="card-content">
-              <h2>
-                Metro: Last Light
-              </h2>
-              <!-- <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-              </p> -->
-            </div>
-          </div>
-          <div class="card col-lg-3">
-            <img class="card-image" src="images/valhalla.jpg" alt="">
-            <div class="card-content">
-              <h2>
-                Assassin's Creed: Valhalla
-              </h2>
-              <!-- <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-              </p> -->
-            </div>
-          </div>
-          <div class="card col-lg-3">
-            <img class="card-image" src="images/pubg.avif" alt="">
-            <div class="card-content">
-              <h2>
-                Player Unknown Battlegrounds
-              </h2>
-              <!-- <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-              </p> -->
-            </div>
-          </div>
-          <div class="time row">
-            <h4 class="col-lg-3">FRI 1 PM -> 3 PM</h4>
-            <h4 class="col-lg-3">SAT 10 AM -> 12 PM</h4>
-            <h4 class="col-lg-3">MON 1 PM -> 3 PM</h4>
-            <h4 class="col-lg-3">WED 4 PM -> 6 PM</h4>
-          </div>
-          <div class="card col-lg-3">
-            <img class="card-image" src="images/reddead2.jpg" alt="">
-            <div class="card-content">
-              <h2>
-                Red Dead Redemption 2
-              </h2>
-              <!-- <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-              </p> -->
-            </div>
-          </div>
-          <div class="card col-lg-3">
-            <img class="card-image" src="images/nba2k24.webp" alt="">
-            <div class="card-content">
-              <h2>
-                NBA 2K24
-              </h2>
-              <!-- <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-              </p> -->
-            </div>
-          </div>
-          <div class="card col-lg-3">
-            <img class="card-image" src="images/minecraft.jpeg" alt="">
-            <div class="card-content">
-              <h2>
-                Minecraft
-              </h2>
-              <!-- <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-              </p> -->
-            </div>
-          </div>
-          <div class="card col-lg-3">
-            <img class="card-image" src="images/residentevil7.jpg" alt="">
-            <div class="card-content">
-              <h2>
-                Resident Evil 7: Biohazard
-              </h2>
-              <!-- <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-              </p> -->
-            </div>
-          </div>
-          <div class="time row">
-            <h4 class="col-lg-3">FRI 3 PM -> 5 PM</h4>
-            <h4 class="col-lg-3">SAT 3 AM -> 5 PM</h4>
-            <h4 class="col-lg-3">THU 5 PM -> 6 PM</h4>
-            <h4 class="col-lg-3">SUN 4 PM -> 6 PM</h4>
-          </div>
+        <div class="games-container row">
+          <?php
+
+          $servername = "localhost";
+          $username = "root";
+          $password = "samirT080317-";
+          $dbname = "f_g_club";
+
+
+          $conn = new mysqli($servername, $username, $password, $dbname);
+
+
+          if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+          }
+
+
+          $sql = "SELECT title, release_date, description, genre, image FROM games";
+          $result = $conn->query($sql);
+
+
+          if ($result->num_rows > 0) {
+
+            $delay = 0.1;
+            while ($row = $result->fetch_assoc()) {
+              echo '<div class="card col-lg-3 wow fadeInUp" data-wow-delay="' . $delay . 's">';
+              echo '<img class="card-image" src="' . $row["image"] . '" alt="' . $row["title"] . '">';
+              echo '<div class="card-content">';
+              echo '<h2>' . $row["title"] . '</h2>';
+              echo '<p class="genre-text">Genre: ' . $row["genre"] . '</p>';
+              echo '<p class="release-text">Release Date: ' . $row["release_date"] . '</p>';
+              echo '<p>' . $row["description"] . '</p>';
+              echo '</div>';
+              echo '</div>';
+              $delay += 0.1;
+            }
+          } else {
+            echo "0 results";
+          }
+          ?>
         </div>
       </div>
     </section>
+
+
 
     <!-- Events -->
 
@@ -298,22 +239,55 @@
         <div class="container-fluid">
           <h1 class="wow fadeInUp" data-wow-delay="0.5s">Upcoming Events</h1>
           <div class="row">
-            <div class="card col-lg-6 col-md-12">
-              <p class="event-title"><strong>PUBG Esports Tournament</strong> - 25 Mar 2024 - 6:00 PM</p>
-              <p class="event-text">Calling all PUBG enthusiasts! Compete in our esports tournament for a chance to win cash prizes and bragging rights. Teams of five will battle it out in a double-elimination format. Registration is required, so gather your squad and sign up now.</p>
-            </div>
-            <div class="card col-lg-6 col-md-12">
-              <p class="event-title"><strong>NBA 2K24 Tournament</strong> - 30 Mar 2024 - 4:00 PM</p>
-              <p class="event-text">Lace up your virtual sneakers and hit the court in our NBA 2K24 Tournament! Show off your skills on the digital hardwood as you compete against other players in head-to-head matchups. Register now and let the games begin!</p>
-            </div>
-            <div class="card col-lg-6 col-md-12">
-              <p><strong>EA SPORTS FC 24 Championship</strong></p>
-              <p>Experience the excitement of professional football in EA SPORTS FC 24 Championship! Compete against fellow FIFA enthusiasts in a thrilling tournament to determine the ultimate champion. Lace up your virtual cleats and prepare for glory!</p>
-            </div>
+            <?php
+            // SQL query to retrieve event information
+            $sql = "SELECT title, DATE_FORMAT(date, '%e %b %Y') AS formatted_date, TIME_FORMAT(time, '%h:%i %p') AS formatted_time, description FROM events WHERE date>CURDATE()";
+            $result = $conn->query($sql);
+
+            // Check if there are any results
+            if ($result->num_rows > 0) {
+              // Output data of each row
+              $delay = 0.1;
+              while ($row = $result->fetch_assoc()) {
+                echo '<div class="wow fadeInUp card col-lg-6 col-md-12" data-wow-delay="' . $delay . 's">';
+                echo '<p class="event-title"><strong>' . $row["title"] . '</strong> - ' . $row["formatted_date"] . ' - ' . $row["formatted_time"] . '</p>';
+                echo '<p class="event-text">' . $row["description"] . '</p>';
+                echo '</div>';
+                $delay += 0.1;
+              }
+            } else {
+              echo "No upcoming events";
+            }
+            ?>
+          </div>
+          <h1 class="wow fadeInUp" data-wow-delay="0.5s">Past Events</h1>
+          <div class="row">
+            <?php
+            // SQL query to retrieve event information
+            $sql = "SELECT title, DATE_FORMAT(date, '%e %b %Y') AS formatted_date, TIME_FORMAT(time, '%h:%i %p') AS formatted_time, description FROM events WHERE date<CURDATE()";
+            $result = $conn->query($sql);
+
+            // Check if there are any results
+            if ($result->num_rows > 0) {
+              // Output data of each row
+              $delay = 0.1;
+              while ($row = $result->fetch_assoc()) {
+                echo '<div class="wow fadeInUp card col-lg-6 col-md-12" data-wow-delay="' . $delay . 's">';
+                echo '<p class="event-title"><strong>' . $row["title"] . '</strong> - ' . $row["formatted_date"] . ' - ' . $row["formatted_time"] . '</p>';
+                echo '<p class="event-text">' . $row["description"] . '</p>';
+                echo '</div>';
+                $delay += 0.1;
+              }
+            } else {
+              echo "No upcoming events";
+            }
+            $conn->close();
+            ?>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- Gallery -->
 
@@ -322,6 +296,46 @@
 
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="about-col col-lg-4">
+          <h4 class="footer-title">About Us</h4>
+          <p>Unique shelter to enjoy gaming in calm and modern atmosphere based in Tanger, Morocco.
+            We aim to provide a safe haven for those who game in their spare time whether it is casual or competitive.</p>
+          <form action="submit">
+            <input class="email-box" type="text" placeholder="Email Address">
+          </form>
+        </div>
+        <div class="explore-col col-lg-3">
+          <h4 class="footer-title">Explore</h4>
+          <ul>
+            <li>Features</li>
+            <li>Games</li>
+            <li>Events</li>
+            <li>Gallery</li>
+          </ul>
+        </div>
+        <div class="games-col col-lg-2">
+          <h4 class="footer-title">Our popular games</h4>
+          <ul>
+            <li>Ea Sports FC 24</li>
+            <li>PUBG</li>
+            <li>Minecraft</li>
+            <li>NBA 2K24</li>
+          </ul>
+        </div>
+        <div class="info-col col-lg-2">
+          <h5>Phone</h5>
+          <p>+212645091209</p>
+          <h5>Address</h5>
+          <p style="text-transform: uppercase;">Faculty of sciences & technologies, Boukhalef, Tanger</p>
+          <h5>Email Adress</h5>
+          <p>sendme@gmail.com</p>
+        </div>
+      </div>
+    </footer>
   </section>
   <!-- javscript js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
