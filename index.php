@@ -35,6 +35,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Lato:wght@100;300;400&family=Lora:ital,wght@0,400..700;1,400..700&family=Mohave:ital,wght@0,300..700;1,300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Trade+Winds&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/fstgaming.png">
   <title>FST Gaming Club </title>
 </head>
 
@@ -212,7 +213,7 @@
             $delay = 0.1;
             while ($row = $result->fetch_assoc()) {
               echo '<div class="card col-lg-3 wow fadeInUp" data-wow-delay="' . $delay . 's">';
-              echo '<img class="card-image" src="' . $row["image"] . '" alt="' . $row["title"] . '">';
+              echo '<img class="card-image" src="images/'. $row["image"] .'" alt="' . $row["title"] . '">';
               echo '<div class="card-content">';
               echo '<h2>' . $row["title"] . '</h2>';
               echo '<p class="genre-text">Genre: ' . $row["genre"] . '</p>';

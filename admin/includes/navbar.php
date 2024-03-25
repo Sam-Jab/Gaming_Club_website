@@ -1,5 +1,5 @@
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -8,7 +8,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">FST G-Club <sup></div>
             </a>
 
             <!-- Divider -->
@@ -16,7 +16,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -32,9 +32,16 @@
             <li class="nav-item">
                 <a class="nav-link" href="register.php">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Admin profile</span></a>
+                    <span>Users Management</span></a>
             </li>
 
+            <!-- Games Management -->
+            <li class="nav-item">
+                <a class="nav-link" href="games.php">
+                <!-- <i class="fa-regular fa-gamepad"></i> -->
+                <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>Games Management</span></a>
+            </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -72,7 +79,7 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="login.php">Login</a>
                         <a class="collapse-item" href="register.php">Register</a>
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
@@ -135,7 +142,10 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <form action="logout.php" method="POST"> 
+                        <button type="submit" name="logout_btn" class="btn btn-primary">Logout</button>
+    </form>
+                    <!-- <a class="btn btn-primary" href="login.php">Logout</a> -->
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('database/dbconfig.php');
+include('dbconfig.php');
 
 if($connection)
 {
@@ -9,4 +9,7 @@ if($connection)
 else
 {
     header("Location: dbconfig.php");
+}
+if(!$_SESSION['username']){
+    header('Location: login.php');
 }

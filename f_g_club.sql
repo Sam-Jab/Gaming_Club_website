@@ -113,22 +113,22 @@ INSERT INTO `tournaments` (`id`, `title`, `date`, `time`, `description`) VALUES
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
-  `id` int NOT NULL,
-  `user_name` varchar(25) COLLATE utf8mb4_general_ci NOT NULL,
-  `user_email` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `tel` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- CREATE TABLE `users` (
+--   `id` int NOT NULL,
+--   `user_name` varchar(25) COLLATE utf8mb4_general_ci NOT NULL,
+--   `user_email` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+--   `password` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+--   `tel` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `user_name`, `user_email`, `password`, `tel`) VALUES
-(1, 'SmirTa', 'samirTaouss@gmail.com', '6faf3ec06b360e5170c507d5b51ebbee', '0706746127'),
-(2, 'SalahJb', 'salah8jab@gmail.com', '123salah', '0706746127'),
-(3, 'sdfghj', 'sdfgh@gmail.com', '164ced40da0a61fa08cfed0412dc587f', '2345678');
+-- INSERT INTO `users` (`id`, `user_name`, `user_email`, `password`, `tel`) VALUES
+-- (1, 'SmirTa', 'samirTaouss@gmail.com', '6faf3ec06b360e5170c507d5b51ebbee', '0706746127'),
+-- (2, 'SalahJb', 'salah8jab@gmail.com', '123salah', '0706746127'),
+-- (3, 'sdfghj', 'sdfgh@gmail.com', '164ced40da0a61fa08cfed0412dc587f', '2345678');
 
 --
 -- Indexes for dumped tables
@@ -183,8 +183,8 @@ ALTER TABLE `tournaments`
 --
 -- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+-- ALTER TABLE `users`
+--   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

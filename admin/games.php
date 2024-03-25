@@ -4,42 +4,46 @@ session_start();
 include("includes/header.php");
 include("includes/navbar.php");
 ?>
-<div class="modal fade" id="gamessection" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<div class="modal fade" id="addadminprofile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Admin Data</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Game Data</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="code.php" method="POST">
+      <form action="code.php" method="POST" enctype="multipart/form-data">
 
         <div class="modal-body">
 
             <div class="form-group">
-                <label> Username </label>
-                <input type="text" name="username" class="form-control" placeholder="Enter Username">
+                <label> Title </label>
+                <input type="text" name="title" class="form-control" placeholder="Enter the title of the game" required>
             </div>
             <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control checking_email" placeholder="Enter Email">
-                <small class="error_email" style="color: red;"></small>
+                <label>Release date</label>
+                <input type="text" name="release_date" class="form-control" placeholder="Enter the release date">
+                <small class="error_date" style="color: red;"></small>
             </div>
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control" placeholder="Enter Password">
+                <label>Genre</label>
+                <input type="text" name="genre" class="form-control" placeholder="Enter the gendre" required>
             </div>
             <div class="form-group">
-                <label>Confirm Password</label>
-                <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password">
+                <label>Description</label>
+                <input type="text" name="description" class="form-control" placeholder="Enter a Description" required>
             </div>
-
+            <div class="form-group">
+                <label>image</label>
+                <input type="file" name="image" id="image" class="form-control" placeholder="Enter an image" required>
+            </div>
 
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" name="registerbtn" class="btn btn-primary">Save</button>
+            <button type="submit" name="gamebtn" class="btn btn-primary">Save</button>
         </div>
       </form>
 
@@ -49,9 +53,9 @@ include("includes/navbar.php");
 <div class="container-fluid">
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary ">Admin Profile
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gamessection">
-       Add Admin Profile 
+        <h6 class="m-0 font-weight-bold text-primary ">OUR GAMES
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">
+       Add a Game
 </button>
         </h6>
 </div>
@@ -70,16 +74,18 @@ include("includes/navbar.php");
             ?>
             <?php
             $connection = mysqli_connect("localhost" , "root" , "" , "f_g_club") ;
-            $query = "SELECT * FROM register";
+            $query = "SELECT * FROM games";
             $query_run = mysqli_query($connection, $query); 
             ?>
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thread>
                 <tr>
                     <th>ID</th>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <th>password</th>
+                    <th>TITLE</th>
+                    <th>Release Date</th>
+                    <th>Gendre</th>
+                    <th>Description</th>
+                    <th>Images</th>
                     <th>EDIT</th>
                     <th>DELETE</th>
                 </tr>
@@ -93,11 +99,14 @@ include("includes/navbar.php");
             ?>
                 <tr>
                                 <td><?php  echo $row['id']; ?></td>
-                                <td><?php  echo $row['username']; ?></td>
-                                <td><?php  echo $row['email']; ?></td>
-                                <td><?php  echo $row['password']; ?></td>
+                                <td><?php  echo $row['title']; ?></td>
+                                <td><?php  echo $row['release_date']; ?></td>
+                                <td><?php  echo $row['genre']; ?></td>
+                                <td><?php  echo $row['description']; ?></td>
+                                <!-- <td>  //echo $row['image']; </td> -->
+                                <td><?php echo'<img src="../images/'.$row['image'].'"width="100px;" height="100px;" alt="Image">' ?></td>
                                 <td>
-                                    <form action="register_edit.php" method="post">
+                                    <form action="games_edit.php" method="post">
                                         <input type="hidden" name="edit_id" value="<?php echo $row['id']; ?>">
                                         <button type="submit" name="edit_btn" class="btn btn-success"> EDIT</button>
                                     </form>
@@ -105,7 +114,7 @@ include("includes/navbar.php");
                                 <td>
                                     <form action="code.php" method="post">
                                         <input type="hidden" name="delete_id" value="<?php echo $row['id']; ?>">
-                                        <button type="submit" name="delete_btn_reg" class="btn btn-danger"> DELETE</button>
+                                        <button type="submit" name="delete_btn_gam" class="btn btn-danger"> DELETE</button>
                                     </form>
                                 </td>
                             </tr>
