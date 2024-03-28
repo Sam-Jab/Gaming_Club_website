@@ -32,6 +32,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="register.php">
                     <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Admin Management</span></a>
+            </li>
+
+             <!-- Users Profile -->
+             <li class="nav-item">
+                <a class="nav-link" href="users.php">
+                    <!-- <i class="fas fa-fw fa-chart-area"></i> -->
+                    <i class="fa-solid fa-users"></i>
+                    <!-- <i type="image/png" href="../images/users.png"></i> -->
                     <span>Users Management</span></a>
             </li>
 
@@ -41,6 +50,14 @@
                 <!-- <i class="fa-regular fa-gamepad"></i> -->
                 <i class="fa-solid fa-puzzle-piece"></i>
                     <span>Games Management</span></a>
+            </li>
+
+            <!-- Games Management -->
+            <li class="nav-item">
+                <a class="nav-link" href="tournaments.php">
+                <!-- <i class="fa-regular fa-gamepad"></i> -->
+                <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>Tournaments Management</span></a>
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
