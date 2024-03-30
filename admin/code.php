@@ -374,3 +374,66 @@ if(isset($_POST['updatebtn_tour']))
         header('Location: tournaments.php'); 
     }
 }
+
+if(isset($_POST['gallerybtn']))
+{
+    $caption = $_POST['caption'];
+    $description = $_POST['description'];
+    $image = $_FILES["image"]['name']; 
+      
+
+    $caption_query = "SELECT * FROM gallery WHERE caption='$caption' ";
+    $caption_query_run = mysqli_query($connection, $caption_query);
+    if(mysqli_num_rows($caption_query_run) > 0)
+    {
+        $_SESSION['status'] = "Gallery Already Exist ";
+        $_SESSION['status_code'] = "error";
+        header('Location: gallery.php');  
+    }
+    else
+    {
+            $query = "INSERT INTO gallery (caption,description,image) VALUES ('$caption', '$description' , '$image')";
+            $query_run = mysqli_query($connection, $query);
+            
+            if($query_run)
+            {
+                move_uploaded_file($_FILES["image"]["tmp_name"] , "../images/".$_FILES["image"]["name"]) ; 
+                $_SESSION['status'] = "Gallery is Added";
+                $_SESSION['status_code'] = "success";
+                header('Location: gallery.php');
+            }
+            else 
+            {
+                $_SESSION['status'] = "Gallery is Not Added";
+                $_SESSION['status_code'] = "error";
+                header('Location: gallery.php');  
+            }
+        }
+        
+    }
+
+
+    if(isset($_POST['updatebtn_gallery']))
+{
+    $id = $_POST['edit_id'];
+    $caption = $_POST['edit_caption'];
+    $description = $_POST['edit_description'];
+    $image = $_FILES["edit_image"]['name'];
+    // $conn = mysqli_connect('localhost','root','','f_g_club');
+    $query = "UPDATE gallery SET caption ='$caption', description='$description' , image='$image' WHERE id='$id' ";
+    $query_run = mysqli_query($connection, $query);
+
+    if($query_run)
+    {
+        move_uploaded_file($_FILES["edit_image"]["tmp_name"] , "../images/".$_FILES["edit_image"]["name"]) ; 
+        $_SESSION['success'] = "Your Data is Updated";
+        $_SESSION['status_code'] = "success";
+        header('Location: gallery.php'); 
+    }
+    else
+    {
+        $_SESSION['status'] = "Your Data is NOT Updated";
+        $_SESSION['status_code'] = "error";
+        header('Location: gallery.php'); 
+    }
+}

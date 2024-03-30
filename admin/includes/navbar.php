@@ -60,6 +60,15 @@
                     <span>Tournaments Management</span></a>
             </li>
 
+            <!-- Gallery -->
+            <!-- Games Management -->
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.php">
+                <!-- <i class="fa-regular fa-gamepad"></i> -->
+                <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>Gallerys</span></a>
+            </li>
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
